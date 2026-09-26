@@ -48,6 +48,32 @@ php artisan serve
 
 Open the URL printed by `php artisan serve`. During frontend development, run `npm run dev` in a second terminal instead of building assets each time.
 
+## Development
+
+To contribute to the project:
+
+1. Install the dependencies and prepare the application by following the [setup instructions](#setup).
+2. Start the Laravel server and frontend asset watcher together:
+
+	```sh
+	composer run dev
+	```
+
+3. Make focused changes and add or update tests for new behavior.
+4. Run the test suite before submitting a contribution:
+
+	```sh
+	php artisan test
+	```
+
+5. Format modified PHP files with Laravel Pint:
+
+	```sh
+	vendor/bin/pint --dirty --format agent
+	```
+
+Keep pull requests focused and include a clear description of the changes.
+
 ## Tests
 
 Run the test suite with:
